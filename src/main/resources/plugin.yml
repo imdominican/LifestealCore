@@ -1,0 +1,15 @@
+name: LifestealCore
+version: '${project.version}'
+main: rip.lifesteal.core.LifestealCore
+api-version: 1.19
+softdepend: [ Vault, PlaceholderAPI ]
+commands:
+  giveheart:
+    aliases: [givehearts]
+  givehalfheart:
+    aliases: [givehalfhearts, givehalf]
+  sethealth:
+  viewhealth:
+  heartpay:
+    aliases: [ payheart, payhearts ]
+  healthall:

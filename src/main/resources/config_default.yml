@@ -1,0 +1,65 @@
+# General settings
+general:
+  # The prefix for all messages
+  # Note the space at the end <3
+  prefix: "&7[&#F41643❤&7] "
+  # The primary color of messages
+  # Note: in the rest of this config, you can use "&p" as a shortcut for this color
+  primary-color: "&#F41643"
+  # The secondary color of messages
+  # Note: in the rest of this config, you can use "&s" as a shortcut for this color
+  secondary-color: "&#ff8cbd"
+
+  # What's sent when a player isn't allowed to use a command
+  permission-denied-msg: "&cInsufficient permissions."
+
+# Core lifesteal elements
+lifesteal:
+  # The maximum amount of health (not hearts. 60 health translates to 30 hearts)
+  max-health: 60
+  # The minimum amount of health
+  min-health: 2
+
+# A list of all the materials allowed can be found here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+
+heart:
+  material: RED_DYE
+  name: "&p&lHeart"
+  lore:
+    - "&sRight click to gain 1 heart"
+  enchant-glow: true
+
+half-heart:
+  material: FERMENTED_SPIDER_EYE
+  name: "&p&lHalf Heart"
+  lore:
+    - "&sCan be crafted into a full heart! &7(/recipes)"
+  enchant-glow: true
+
+combat-log:
+  time: 15 # in seconds
+  message-delay: 2 # in seconds
+
+# /sethealth (player) (health) command
+sethealth:
+  permission: lifesteal.sethealth
+
+# /viewhealth [player] command
+viewhealth:
+  permission: lifesteal.viewhealth
+
+# /healthall (amount) command
+healthall:
+  permission: lifesteal.healthall
+
+# /heartpay (player) (amount) command
+heartpay:
+  permission: lifesteal.heartpay
+
+# /giveheart (player) (amount) command
+giveheart:
+  permission: lifesteal.giveheart
+
+# /givehalf (player) (amount) command
+givehalf:
+  permission: lifesteal.givehalf
